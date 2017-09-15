@@ -1,6 +1,4 @@
-//#include <HID.h>
-//#include <PluggableUSB.h>
-//#include <Keyboard.h>
+#include <Keyboard.h>
 #include <Bounce2.h>
 
 #define b1 3
@@ -8,10 +6,10 @@
 #define b3 5
 #define b4 6
 
-#define l1 8
-#define l2 9
-#define l3 10
-#define l4 11
+//#define l1 8
+//#define l2 9
+//#define l3 10
+//#define l4 11
 
 Bounce db1 = Bounce();
 Bounce db2 = Bounce();
@@ -21,17 +19,16 @@ Bounce db4 = Bounce();
 void setup()
 {
   Serial.begin(9600);
-  //Keyboard.begin();
 
   pinMode( b1, INPUT_PULLUP );
   pinMode( b2, INPUT_PULLUP );
   pinMode( b3, INPUT_PULLUP );
   pinMode( b4, INPUT_PULLUP );
 
-  pinMode( l1, OUTPUT );
-  pinMode( l2, OUTPUT );
-  pinMode( l3, OUTPUT );
-  pinMode( l4, OUTPUT );
+  //pinMode( l1, OUTPUT );
+  //pinMode( l2, OUTPUT );
+  //pinMode( l3, OUTPUT );
+  //pinMode( l4, OUTPUT );
 
   db1.attach(b1);
   db1.interval(5);
@@ -44,6 +41,9 @@ void setup()
 
   db4.attach(b4);
   db4.interval(5);
+
+  Keyboard.begin();
+
 }
 
 void loop()
@@ -53,18 +53,20 @@ void loop()
   int v3 = db3.read();
   int v4 = db4.read();
 
-  //if( v1 == 0 ) Keyboard.press('d');
-  //if( v2 == 0 ) Keyboard.press('f');
-  //if( v3 == 0 ) Keyboard.press('j');
-  //if( v4 == 0 ) Keyboard.press('k');
+  
+  
+  if( v1 == 0 ) Keyboard.print("d");
+  if( v2 == 0 ) Keyboard.print("f");
+  if( v3 == 0 ) Keyboard.print("j");
+  if( v4 == 0 ) Keyboard.println("k");
 
   delay(100);
   //Keyboard.releaseAll()k;
 
-  digitalWrite( l1, !v1 );
-  digitalWrite( l2, !v2 );
-  digitalWrite( l3, !v3 );
-  digitalWrite( l4, !v4 );
+  //digitalWrite( l1, !v1 );
+  //digitalWrite( l2, !v2 );
+  //digitalWrite( l3, !v3 );
+  //digitalWrite( l4, !v4 );
 
   Serial.print(v1);
   Serial.print(v2);
