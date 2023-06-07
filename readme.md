@@ -2,57 +2,37 @@
 
 - 아두이노 수업 시간에 배웠던 내용들을 응용한 내용들을 모아둔 레포지토리
 
-## 2017_BlueChat
-<p align="justify">
+## 레포지토리 설명
 
-- 아두이노, 씨리얼 통신, 블루투스 모듈과 LCD 모듈로 간단한 채팅 구현
-</p>
-
-## 2017_game_controller
-<p align="justify">
-
-- 아누이노와 조이스틱, 버튼들을 직접 납땜하고, 나무판을 톱질하고 못을 박아 직접 만든 게임 컨트롤러
-</p>
-
-## 2017_OSU_Controller
-<p align="justify">
-
-- OSU 게임 플레이가 가능한 게임 컨트롤러
-</p>
-
+- 2017_BlueChat
+    - 아두이노, 씨리얼 통신, 블루투스 모듈과 LCD 모듈로 간단한 채팅 구현
 <br>
 
-## 2017_RADIOCHAT
-<p align="justify">
-
-- RF433 모듈을 이용한 채팅 구현
-</p>
-
+- 2017_game_controller
+    - 아누이노와 조이스틱, 버튼들을 직접 납땜하고, 나무판을 톱질하고 못을 박아 직접 만든 게임 컨트롤러
 <br>
 
-## 2017_SEQUENCE_GAME
-<p align="justify">
 
-- LED와 buzz 모듈, 버튼을 사용한 시퀀스 게임
-- LED와 buzz 모듈로 시퀀스를 보여주면, 시퀀스에 맞는 button을 눌러야 함
-- 성공하면 시퀀스의 길이가 늘어난다
-</p>
+- 2017_OSU_Controller
+    - OSU 게임 플레이가 가능한 게임 컨트롤러
 <br>
 
-## Example
-<p align="justify">
-
-- 아두이노 수업 시간 실습 내용
-</p>
-
+- 2017_RADIOCHAT
+    - RF433 모듈을 이용한 채팅 구현
 <br>
 
-## sound_voltex
-<p align="justify">
+- 2017_SEQUENCE_GAME
+    - LED와 buzz 모듈, 버튼을 사용한 시퀀스 게임
+    - LED와 buzz 모듈로 시퀀스를 보여주면, 시퀀스에 맞는 button을 눌러야 함
+    - 성공하면 시퀀스의 길이가 늘어난다
+<br>
 
-- 사운드볼텍스 게임 컨트롤러를 위한 프로젝트
-</p>
+- Example
+    - 아두이노 수업 시간 실습 내용
+<br>
 
+- sound_voltex
+    - 사운드볼텍스 게임 컨트롤러를 위한 프로젝트
 <br>
 
 ## 기술 스택
